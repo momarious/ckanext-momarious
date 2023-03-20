@@ -1,0 +1,17 @@
+momarious-js:
+  filter: rjsmin
+  output: ckanext-momarious/%(version)s-momarious.js
+  contents:
+    - js/config.js
+    - js/vendor.js  
+
+momarious-css:
+  filter: cssrewrite
+  output: ckanext-momarious/%(version)s-momarious.css
+  contents:
+    - css/base-main.css
+    - css/uikit.css
+    - css/style.css
+  extra:
+    preload:
+      - base/main

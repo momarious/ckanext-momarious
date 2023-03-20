@@ -1,0 +1,15 @@
+{% ckan_extends %}
+
+{% block styles %}
+  {{ super() }}
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif%7cRoboto:300&display=swap">
+  {% asset 'momarious/momarious-css' %}
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.7/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.7/js/uikit-icons.min.js"></script>
+  {% asset 'momarious/momarious-js' %}
+  
+{% endblock %}

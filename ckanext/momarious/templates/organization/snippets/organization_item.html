@@ -1,0 +1,24 @@
+{% set url = h.url_for(organization.type ~ '_read', action='read', id=organization.name) %}
+{% block item %}
+<div>
+
+    <div class="uk-grid-small uk-child-width-1-1" data-uk-grid>
+        <div class="in-colored-card orange">
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-body">
+                    <div class="in-icon-wrapper uk-margin-remove-bottom">
+                        <span data-uk-icon="icon:fa-comment-dots; ratio: 0.054"></span>
+                    </div>
+                    <a href="#">
+                        <h5 class="uk-margin-small-top uk-margin-remove-bottom">Customer engage <span
+                                data-uk-icon="icon: fa-arrow-alt-circle-right; ratio:0.028"></span></h5>
+                    </a>
+                    <p class="uk-margin-small-top uk-text-small">Voluptate velites quam mole</p>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+{% endblock %}
